@@ -6,10 +6,6 @@ public class Client {
         Originator originator= new Originator();
 
         Tesis tesis;
-        tesis=new Tesis("","");
-        originator.setState(tesis);
-        versiones.addMemento(originator.createVersion());
-
         tesis=new Tesis("13/1/2021","Primera Version");
         originator.setState(tesis);
         versiones.addMemento(originator.createVersion());
@@ -30,6 +26,6 @@ public class Client {
         originator.setState(tesis);
         versiones.addMemento(originator.createVersion());
 
-        originator.restoreMemento(versiones.getVersion(3));
+        originator.restoreMemento(versiones.getVersion(2));
     }
 }
